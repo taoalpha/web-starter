@@ -10,7 +10,7 @@ var examplePath = pkgConfig.config.example;
 
 var config = getConfig({
     in: examplePath+'/index',
-    out: 'dist',
+    out: path.join('dist',examplePath),
     clearBeforeBuild: '!(images|favicon.ico)',
     isDev: process.env.NODE_ENV !== 'production',
     html: false,
@@ -18,10 +18,11 @@ var config = getConfig({
     host: pkgConfig.config.devHost,
     devServer:{
         host: pkgConfig.config.devHost,
+        compress: true,
+        contentBase: path.join(__dirname,"dist")
     },
     output: {
-        filename: "bundle.js",
-        publicPath: "/static/"
+        filename: "bundle.js"
     }
 });
 

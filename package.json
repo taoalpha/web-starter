@@ -13,7 +13,7 @@
   },
   "author": "TaoAlpha",
   "config": {
-    "example": "./flowstate",
+    "example": "./example",
     "buildDir": "./build",
     "buildDirTests": "./build_tests",
     "devHost": "0.0.0.0",
