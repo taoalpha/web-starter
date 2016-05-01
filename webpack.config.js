@@ -11,7 +11,7 @@ var examplePath = pkgConfig.config.example;
 var config = getConfig({
     in: examplePath+'/index',
     out: 'dist',
-    clearBeforeBuild: true,
+    clearBeforeBuild: '!(images|favicon.ico)',
     isDev: process.env.NODE_ENV !== 'production',
     html: false,
     port: pkgConfig.config.devPort,
@@ -28,7 +28,7 @@ var config = getConfig({
 config.plugins.push(
 	new HtmlWebpackPlugin({
       filename: 'index.html',
-      template: 'example/index.pug'
+      template: examplePath+'/index.pug'
     })
 )
 

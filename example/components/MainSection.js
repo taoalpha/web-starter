@@ -13,6 +13,7 @@ const TODO_FILTERS = {
 class MainSection extends Component {
     constructor(props, context) {
         super(props, context);
+        console.log("apear once")
         this.state =  { filter: SHOW_ALL }
     }
 
