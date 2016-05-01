@@ -1,6 +1,0 @@
-export const ADD_TODO = 'ADD'
-export const DEL_TODO = 'DEL'
-export const EDIT_TODO = 'EDIT'
-export const COMPLETE_TODO = 'COMPLETE'
-export const COMPLETE_ALL = 'COMPLETE_ALL'
-export const CLEAR_COMPLETED = 'CLEAR'
