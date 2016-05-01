@@ -8,14 +8,13 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run build && webpack-dev-server",
-    "build": "webpack"
+    "start": "npm run dev && webpack-dev-server",
+    "dev": "webpack",
+    "build": "NODE_ENV=production npm run dev"
   },
   "author": "TaoAlpha",
   "config": {
-    "example": "./example",
-    "buildDir": "./build",
-    "buildDirTests": "./build_tests",
+    "example": "./flowstate",
     "devHost": "0.0.0.0",
     "devPort": 5000
   },
