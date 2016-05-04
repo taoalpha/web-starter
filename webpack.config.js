@@ -15,7 +15,7 @@ var config = getConfig({
     isDev: process.env.NODE_ENV !== 'production',
     html: false,
     port: pkgConfig.config.devPort,
-    devServer:{
+    devServer: {
         host: pkgConfig.config.devHost,
         compress: true,
         contentBase: path.join(__dirname,"dist")
